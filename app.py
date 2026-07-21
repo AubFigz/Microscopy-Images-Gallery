@@ -26,7 +26,7 @@ from flask import (Flask, request, render_template_string, redirect,
 
 REGION = "us-east-1"
 TABLE = "Images"
-BUCKET = "latimer-microscopy-images"
+BUCKET = "microscopy-images"
 PAGE_SIZE = 120
 
 app = Flask(__name__)
