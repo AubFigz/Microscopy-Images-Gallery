@@ -7,8 +7,8 @@ the local czi, uploads, and updates the record.
 
 Keep next to ingest.py and czi_convert.py. Needs czifile, imagecodecs, tifffile.
 
-Preview:  python czi_thumbnails.py "/Volumes/Zimberg Lab/2025 Tiff conversion" --dry-run
-Apply:    python czi_thumbnails.py "/Volumes/Zimberg Lab/2025 Tiff conversion"
+Preview:  python czi_thumbnails.py "/Volumes/Lab/2025" --dry-run
+Apply:    python czi_thumbnails.py "/Volumes/Lab/2025"
 """
 
 import argparse
