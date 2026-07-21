@@ -1,6 +1,6 @@
 """
 ingest.py
-Populate the Images DynamoDB table + latimer-microscopy-images S3 bucket.
+Populate the Images DynamoDB table + microscopy-images S3 bucket.
 
 Images are grouped by shared name-stem, so a time-lapse (one czi exported to
 many _t#### frames) becomes ONE row, not one per frame:
@@ -17,14 +17,14 @@ Keep this file next to czi_metadata.py.
 Requires: boto3 czifile xmltodict pandas openpyxl pillow numpy
 
 Safe preview (no uploads, no writes):
-    python ingest.py "/Volumes/Zimberg Lab/2025 Tiff conversion" \
-        "/Volumes/Zimberg Lab/Cell Lines 2.csv" \
-        --cell-line-folder "BRL 47 tiff convert" --dry-run
+    python ingest.py "/Volumes/Lab/2025" \
+        "/Volumes/Lab/Cell Lines 2.csv" \
+        --cell-line-folder "BRL 47" --dry-run
 
 Real run (optionally limit how many groups to start):
     python ingest.py "/Volumes/Zimberg Lab/2025 Tiff conversion" \
-        "/Volumes/Zimberg Lab/Cell Lines 2.csv" \
-        --cell-line-folder "BRL 47 tiff convert" --limit 3
+        "/Volumes/Lab/Cell Lines 2.csv" \
+        --cell-line-folder "BRL 47" --limit 3
 """
 
 import argparse
