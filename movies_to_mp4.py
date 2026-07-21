@@ -8,11 +8,11 @@ Keep next to ingest.py. Needs: imageio, imageio-ffmpeg, tifffile (+ the usual).
     pip install imageio imageio-ffmpeg
 
 Usage (preview what it would do):
-    python movies_to_mp4.py "/Volumes/Zimberg Lab/2025 Tiff conversion" --dry-run
+    python movies_to_mp4.py "/Volumes/Lab/2025" --dry-run
 Do it for real:
-    python movies_to_mp4.py "/Volumes/Zimberg Lab/2025 Tiff conversion"
+    python movies_to_mp4.py "/Volumes/Lab/2025"
 Re-encode even movies that already have an mp4:
-    python movies_to_mp4.py "/Volumes/Zimberg Lab/2025 Tiff conversion" --force
+    python movies_to_mp4.py "/Volumes/Lab/2025" --force
 """
 
 import argparse
