@@ -18,7 +18,7 @@ from difflib import SequenceMatcher
 
 from ingest import stem_key, picture_label, cell_line_label, frame_num
 
-ROOT = "/Volumes/Zimberg Lab/2025 Tiff conversion"
+ROOT = "/Volumes/Lab/2025"
 
 
 def gather(folder):
