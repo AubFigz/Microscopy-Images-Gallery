@@ -10,8 +10,8 @@ contains the same P## token, so nothing is guessed across acquisitions.
 
 Keep next to ingest.py.
 
-Preview:  python backfill_passage.py "/Volumes/Zimberg Lab/2025 Tiff conversion" --dry-run
-Apply:    python backfill_passage.py "/Volumes/Zimberg Lab/2025 Tiff conversion"
+Preview:  python backfill_passage.py "/Volumes/Lab/2025" --dry-run
+Apply:    python backfill_passage.py "/Volumes/Lab/2025"
 """
 
 import argparse
