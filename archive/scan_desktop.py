@@ -22,8 +22,8 @@ import re
 # ---- EDIT THESE TO MATCH YOUR LAB -------------------------------------------
 
 PEOPLE = [
-    "Abdullah", "AlmUtaiRy", "Carol", "Colton", "Jenniffer Kalil", "Jowaher",
-    "Manasi", "Megan", "Stephen Zimberg", "XiaoLu", "Yousef",
+    "Abdullah", "AlmUtaiRy", "Carol", "Colton", "Jenniffer", "Jowaher",
+    "Manasi", "Megan", "Stephen", "XiaoLu", "Yousef",
 ]
 
 SKIP_FOLDERS = [
@@ -47,11 +47,7 @@ SPECIAL_LINES = [
 
 # initials in file names -> photographer (JL excluded; can be part of a line name)
 INITIALS = {
-    "cm": "Carol Murphy", "carol": "Carol Murphy", "murphy": "Carol Murphy",
-    "ash": "Abdullah",
-    "jk": "Jenniffer Kalil", "jenn": "Jenniffer Kalil",
-    "jennk": "Jenniffer Kalil", "kalil": "Jenniffer Kalil",
-    "af": "Aubrey", "amf": "Aubrey",
+    "af": "Aubrey", "amf": "Aubrey"
 }
 
 # experiment context found in folder names -> a searchable "context" note
