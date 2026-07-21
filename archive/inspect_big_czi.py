@@ -5,7 +5,7 @@ Before trying to make a preview clip from a multi-GB czi movie, find out whether
 we can read just the first few timepoints instead of loading the whole file.
 This reports what is actually inside the czi and times a single-frame read.
 
-    python inspect_big_czi.py "/Volumes/Zimberg Lab/.../BRL-42 flask day 32.czi"
+    python inspect_big_czi.py "/Volumes/Lab/.../BRL-42 flask day 32.czi"
 """
 
 import os
