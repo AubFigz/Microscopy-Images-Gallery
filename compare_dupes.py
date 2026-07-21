@@ -6,9 +6,9 @@ number), compare the real image bytes to tell:
   DIFFERENT  = different images that share a name    -> must keep both
 
 Run one folder:
-    python compare_dupes.py "/Volumes/Zimberg Lab/2025 Tiff conversion" "BRL 41 tiff convert"
+    python compare_dupes.py "/Volumes/Lab/2025" "BRL 41 tiff convert"
 Run EVERY cell-line folder on the drive (audit what's already uploaded):
-    python compare_dupes.py "/Volumes/Zimberg Lab/2025 Tiff conversion" --all
+    python compare_dupes.py "/Volumes/Lab/2025" --all
 """
 import hashlib
 import os
