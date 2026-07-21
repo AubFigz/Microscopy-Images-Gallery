@@ -43,10 +43,10 @@ from PIL import Image
 from czi_metadata import extract_czi_metadata
 
 # ---- config ----
-BUCKET = os.environ.get("MICRO_BUCKET", "latimer-microscopy-images")
+BUCKET = os.environ.get("MICRO_BUCKET", "microscopy-images")
 TABLE = os.environ.get("MICRO_TABLE", "Images")
 REGION = os.environ.get("AWS_REGION", "us-east-1")
-CREATED_BY = os.environ.get("MICRO_USER", "Aubry Figueroa")
+CREATED_BY = os.environ.get("MICRO_USER", "Aubrey")
 THUMB_MAX = 512
 CZI_MAX_UPLOAD_MB = int(os.environ.get("MICRO_CZI_MAX_MB", "500"))  # skip auto-upload above this
 
@@ -68,14 +68,6 @@ IGNORE_CZI_NAMES = [
 # Matched as whole words, case-insensitive. Add new people here.
 # NOTE: "JL" is deliberately absent - it can be part of a cell-line name.
 PHOTOGRAPHERS = {
-    "cm": "Carol Murphy",
-    "carol": "Carol Murphy",
-    "murphy": "Carol Murphy",
-    "ash": "Abdullah",
-    "jk": "Jenniffer Kalil",
-    "jenn": "Jenniffer Kalil",
-    "jennk": "Jenniffer Kalil",
-    "kalil": "Jenniffer Kalil",
     "af": "Aubrey",
     "amf": "Aubrey",
 }
