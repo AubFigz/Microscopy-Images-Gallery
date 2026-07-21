@@ -13,7 +13,7 @@ import boto3
 
 REGION = "us-east-1"
 TABLE = "Images"
-BUCKET = "latimer-microscopy-images"
+BUCKET = "microscopy-images"
 
 ddb = boto3.resource("dynamodb", region_name=REGION).Table(TABLE)
 s3 = boto3.client("s3", region_name=REGION)
