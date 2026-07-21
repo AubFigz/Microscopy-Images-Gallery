@@ -2,11 +2,11 @@
 # run_upload.sh — incremental upload of all cell-line folders to S3 + DynamoDB.
 # Safe to run repeatedly (and on a schedule): only new images are added.
 
-cd "/Users/jeanlatimer/microscopy" || exit 1
+cd "/Users/af/microscopy" || exit 1
 source venv/bin/activate
 
-ROOT="/Volumes/Zimberg Lab/2025 Tiff conversion"
-CSV="/Volumes/Zimberg Lab/Cell Lines 2.csv"
+ROOT="/Volumes/Lab/2025"
+CSV="/Volumes/Lab/Cell Lines 2.csv"
 
 if [ ! -d "$ROOT" ]; then
   echo "$(date): image drive not mounted at $ROOT — skipping"
